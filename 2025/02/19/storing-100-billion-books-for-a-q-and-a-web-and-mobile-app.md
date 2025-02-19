@@ -5,7 +5,7 @@ Imagine a vast digital library containing **100 billion books**, covering **100 
 
 This isn’t just an ambitious idea; it’s a real challenge for anyone building a large-scale **Q&A web and mobile app**. In this article, we will explore how to efficiently store, search, and retrieve this massive dataset using cutting-edge technologies like **Elasticsearch, FAISS, BM25 ranking, and NLP-based search**.
 
----
+
 
 ## **Understanding the Scale of the Challenge**
 Each book in our system can have:
@@ -19,7 +19,7 @@ Each book in our system can have:
 
 Storing and querying **1 billion books per category** requires an efficient **data structure, indexing strategy, and retrieval mechanism**.
 
----
+
 
 ## **Database Selection: Elasticsearch vs. Alternatives**
 Elasticsearch stands out as a **powerful, distributed search engine**, but are there alternatives? Let’s compare:
@@ -35,7 +35,7 @@ Elasticsearch stands out as a **powerful, distributed search engine**, but are t
 
 For **hybrid search**, **Elasticsearch + FAISS** is the best combination.
 
----
+
 
 ## **Indexing 100 Billion Books in Elasticsearch**
 ### **Index Structure**
@@ -51,7 +51,7 @@ We use **separate indices for different data layers**:
 - **Index hot books separately** for faster lookups.
 - **Cross-cluster search (CCS)** distributes queries efficiently.
 
----
+
 
 ## **Searching 100 Billion Books: BM25, FAISS, and NLP**
 ### **1️⃣ Keyword Search with BM25**
@@ -77,7 +77,7 @@ FAISS stores **vector embeddings** of books, pages, and words, enabling **neares
 - Query **Elasticsearch** for **keyword ranking**.
 - Combine results using **ranking models** (LTR, weighted scoring).
 
----
+
 
 ## **Handling 100 Million Queries Per Second (QPS)**
 ### **Choosing the Right API Framework**
@@ -89,7 +89,7 @@ FAISS stores **vector embeddings** of books, pages, and words, enabling **neares
 
 🔹 **Verdict:** **FastAPI** is the best for handling 100M QPS.
 
----
+
 
 ## **Optimizing Frequently Accessed Books (Hot Indexing)**
 Some books are referenced **millions of times**, requiring special treatment:
@@ -97,7 +97,7 @@ Some books are referenced **millions of times**, requiring special treatment:
 - **Caching:** Use Elasticsearch query caching for speed.
 - **Dedicated nodes:** Assign powerful nodes to "hot" books.
 
----
+
 
 ## **Milvus + Elasticsearch for Advanced Vector Search**
 If FAISS becomes costly, **Milvus** is a solid alternative:
@@ -107,7 +107,7 @@ If FAISS becomes costly, **Milvus** is a solid alternative:
 
 Would you like step-by-step implementation details?
 
----
+
 
 ## **Conclusion: The Future of AI-Powered Book Search**
 Storing and searching **100 billion books** isn’t just about **big data**; it’s about **making knowledge accessible**. Using **Elasticsearch, FAISS, BM25, and NLP**, we can build a **blazing-fast, intelligent Q&A system** for any **web or mobile app**.
