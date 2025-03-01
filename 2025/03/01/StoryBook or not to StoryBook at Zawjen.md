@@ -1,6 +1,6 @@
-# StoryBook or not to StoryBook at Zawjen
+# Storybook or not to Storybook at Zawjen
 
-An excellent UX suggestion about Storybook from Sidra Waseem, a volunteer UX Designer at Zawjen.net
+An excellent UX suggestion about Storybook from **[Sidra Waseem](https://www.linkedin.com/in/sidramwaseem/)**, a volunteer UX Designer at Zawjen.net
 
 I used a Storybook in one of the financial product AARP Money Map. Because it was just one website without much reuse, developers often forget to update Storybook and it stays in a crashed state. So, if not maintained properly, the Storybook version of components might differ from the real app behavior.
 
