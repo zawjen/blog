@@ -6,7 +6,7 @@ I am interested in [`Storybook`](https://github.com/storybookjs/storybook) and
 
 I see `StencilJs` has a potential to encapsulate UX for all of our websites. StencilJs components can provide a single source of truth for Web Components for all of the websites, or for right now [`web-zawjen`](https://github.com/zawjen/web-zawjen) and [`web-zawjen-admin`](https://github.com/zawjen/web-zawjen-admin).
 
-I can see a promise of `StencilJs` supporting `NextJs` SSR. But this has to be validated by doing a `POC` using `NextJs 19`. We need to understand the bundle size of our website and performance with or without `StencilJs`.
+I can see a promise of `StencilJs` supporting `NextJs` SSR. But this has to be validated by doing a `POC` using `NextJs 15` and `React 19`. We need to understand the bundle size of our website and performance with or without `StencilJs`.
 
 So far, I have noticed that `StencilJs`, does not support `ReactNative`. So, for our `ReactNative` mobile app, [`app-zawjen`](https://github.com/zawjen/app-zawjen), we may need to think of another strategy. Storybook does support ReactNative , which is a good news.
 
